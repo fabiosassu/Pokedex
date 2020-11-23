@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pkmn_image"
+        android:layout_height="96dp"
+        android:layout_width="96dp"
+        app:layout_constraintBottom_toTopOf="@id/pkmn_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:gravity="center_horizontal"
+        android:id="@+id/pkmn_name"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/pkmn_image"
+        app:layout_constraintStart_toStartOf="@id/pkmn_image"
+        app:layout_constraintTop_toBottomOf="@+id/pkmn_image"
+        tools:text="Pikachu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

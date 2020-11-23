@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" translatable="false">Pokedex</string>
+    <string name="no_data_available">No data available</string>
+    <string name="common_retry">Retry</string>
+    <string name="type">Type</string>
+    <string name="skills">Skills</string>
+</resources>

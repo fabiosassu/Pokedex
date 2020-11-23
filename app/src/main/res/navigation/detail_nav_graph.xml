@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_activity_graph"
+    app:startDestination="@id/pokemonDetailFragment">
+    <fragment
+        android:id="@+id/pokemonDetailFragment"
+        android:name="it.fabiosassu.pokedex.ui.detail.PokemonDetailFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_pokemon_detail" >
+        <argument
+            android:name="pokemon_id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>
